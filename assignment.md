@@ -79,7 +79,7 @@ Now that you have the makings of a child theme. Drop that theme in with your wor
 Step 2: Custom Page Templates
 --------------------
 
-### 6. Create a template page from the parent theme’s page.php file
+### 1. Create a template page from the parent theme’s page.php file
 - Open the parent themes’s page.php file and do a save-as to your child theme. 
 - Next, change the name of the file from "page.php" to "tmp-custom-page-one.php". 
 - Next, open the newly named file "tmp-custom-page-one.php" and give it the necessary commented code at the very top of the file that will allow wp to recognize it as a template.
@@ -93,7 +93,7 @@ Step 2: Custom Page Templates
 - [http://codex.wordpress.org/Page_Templates](http://codex.wordpress.org/Page_Templates)
 - [http://codex.wordpress.org/Page_Templates#Custom_Page_Template](http://codex.wordpress.org/Page_Templates#Custom_Page_Template)
 
-### 7. Custom template: template part
+### 2. Custom template: template part
 Now that you have a template file that is usable you’ll want to do some modifications to a few areas. To do this we’ll need to bring over another file from the parent theme. Copy and paste the "content-page.php" over to your child theme. This will overwrite the parent themes version allow us to make changes to the theme with our damaging the parent theme.
 
 This theme uses the function "get_template_part" which allows for this type of child theme overwriting. It is best practice to always use "get_template_part" when including a file that will echo php.
@@ -101,7 +101,7 @@ This theme uses the function "get_template_part" which allows for this type of c
 **Links**  
 - [http://codex.wordpress.org/Function_Reference/get_template_part](http://codex.wordpress.org/Function_Reference/get_template_part)
 
-### 8. Custom template: create a custom field
+### 3. Custom template: create a custom field
 Now that you have "content-page.php" in you child theme we’ll open that file and add a custom field value. Custom fields are a fast easy way to add content to a page, but you must be careful not to overdo it. Custom fields are so easy that they can easily take over a page full of items that are not necessary.
 
 From the "edit" screen of the "sample page" in the wp-admin. You will see the "Custom Fields" metabox below the text-editor. You will see "Name" and "Value". The name will either be an empty field or a select. If it is a select click the "Enter New" link just below it.
@@ -110,7 +110,7 @@ Give your custom field the name "secondary-title" and give it a value of "My sec
 
 At it’s most basic form this is a key=value pair just like basic php - http://www.php.net/manual/en/language.variables.basics.php
 
-### 9. Custom template: echo your custom field
+### 4. Custom template: echo your custom field
 Now that you have a custom field saved it is available for you to use with in that specific page "Sample Page". Custom fields, by default, are only usable in conjunction with the page they are created for.
 
 - Open your child theme file "content-page.php". 
